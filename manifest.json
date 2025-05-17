@@ -1,0 +1,37 @@
+{
+  "manifest_version": 3,
+  "name": "Blend Support Toolkit",
+  "version": "1.4.1",
+  "description": "Tools for the Blend Support team",
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js"]
+    }
+  ],
+  "web_accessible_resources": [{
+    "resources": ["script.js"],
+    "matches": ["<all_urls>"]
+  }],
+  "icons": {
+    "16": "/resources/images/blend16.png",
+    "32": "/resources/images/blend48.png" ,
+    "128": "/resources/images/blend128.png"
+  },
+  "permissions": [
+    "tabs",
+    "storage",
+    "webRequest",
+    "scripting",
+    "declarativeContent",
+    "activeTab"
+  ],
+  "host_permissions": [
+    "*://*/*"
+  ],
+  "action": {
+    "default_icon": "/resources/images/blend48.png",
+    "default_popup": "popup.html",
+    "default_title": "Click me to get started"
+  }
+}
