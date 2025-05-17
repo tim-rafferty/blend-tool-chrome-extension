@@ -1,0 +1,252 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  width: 275px;
+  height: 425px;
+  background-color: rgb(216, 216, 216);
+}
+h2{
+  color: #f7f8ff;
+  font-family: Sans-Serif;
+  font-weight: 500;
+  font-size: 24px;
+  padding-top: 5px;
+  padding-bottom: 5x;
+  letter-spacing: 1px;
+  background-image: linear-gradient(135deg, #00146b 46.88%, #6675e0 46.88%, #6675e0 50%, #00146b 50%, #00146b 96.88%, #6675e0 96.88%, #6675e0 100%);
+  background-size: 22.63px 22.63px;
+}
+h3{
+  font-family: sans-serif;
+  font-weight: 300;
+  font-size: 12px;
+  padding-left: 6px;
+  padding-top: 3px;
+  padding-bottom: 3px;
+  color: #f7f8ff;
+  background: rgb(0,20,107);
+  background: linear-gradient(165deg, rgba(0,20,107,1) 0%, rgba(54,71,169,1) 65%, rgba(102,117,224,1) 100%);
+}
+hr{
+  margin-top:8px;
+  border-top: 2px solid;
+  width:260px;
+  margin: 0 auto;
+  margin-top:8px;
+  color:#FFFFFF;
+}
+.submit_background{
+  padding-top: 3px;
+  padding-bottom: 7px;
+  padding-left: 7px;
+  padding-right: 69px;
+}
+.button_id{
+  background-color: rgb(0, 117, 252);
+  color: rgb(241, 241, 241);
+  text-decoration: none;
+  text-transform: uppercase;
+  padding-top: 7px;
+  padding-bottom: 7px;
+  padding-left: 6px;
+  padding-right: 6px;
+  border-radius: 4px;
+  text-align: center;
+  font-family: sans-serif;
+}
+.button_id:hover{
+  background-color: #555;
+  cursor: pointer;
+}
+.urltext{
+  text-align: center;
+}
+.link_top{
+  text-align: left;
+  padding-top: 5px;
+  padding-bottom: 6px;
+  padding-left: 6px;
+  padding-right: 5px;
+  font-family: sans-serif;
+  display: table-cell;
+}
+.link_bottom{
+  text-align: left;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-left: 6px;
+  padding-right: 5px;
+  font-family: sans-serif;
+  display: table-cell;
+}
+.id_url{
+  background-color: rgb(0, 117, 252);
+  color: white;
+  padding: 7px;
+  text-decoration: none;
+  text-transform: uppercase;
+  border-radius: 4px;
+}
+.id_url:hover{
+  background-color: #555;
+}
+.description{
+  font-size: 11px;
+  padding-top: 3px;
+  padding-bottom: 2px;
+  padding-left: 8px;
+  padding-right: 8px;
+  color: #494949;
+}
+.results{
+  padding: 0px 5px;
+  margin-top: 4px;
+  margin-bottom: 4px;
+}
+.id_header{
+  list-style: none;
+  margin-left: 5px;
+  margin-bottom: 1px;
+  text-transform: uppercase;
+  font-family: sans-serif;
+  font-size: 10.5px;
+  color: rgb(87, 87, 87);
+}
+.id_result{
+  text-align: center;
+  font-family: sans-serif;
+  font-size: 13px;
+  font-weight: 500;
+  padding: 4px;
+  /*text-transform: uppercase;*/
+  background-color: azure;
+  border-radius: 4px;
+  margin-bottom: 4px;
+  color: rgb(41, 41, 41);
+  list-style: none;
+}
+.borrower_results{
+  text-align: center;
+  font-family: sans-serif;
+  font-size: 13px;
+  font-weight: 500;
+  /*text-transform: uppercase;*/
+  background-color: azure;
+  border-radius: 4px;
+  margin: 5px 0;
+  color: rgb(41, 41, 41);
+}
+.link_table{
+  display: table-row;
+  margin-left: 50px;
+}
+#rolodexbutton{
+  color: #FFFFFF;
+  background-color: rgb(0, 117, 252);
+  display: inline-block;
+  padding: 7px;
+  font-weight: 350;
+  font-family: sans-serif;
+  border-radius: 4px;
+}
+#apibutton{
+  color: #4e4e4e;
+  background-color: rgb(216, 216, 216);
+  padding: 7px;
+  font-weight: 350;
+  font-family: sans-serif;
+  float: right;
+  border-radius: 4px;
+}
+#rolodexbutton:hover{
+  background-color: rgb(216, 216, 216)!important;
+  cursor: pointer;
+}
+#apibutton:hover{
+  background-color: rgb(216, 216, 216)!important;
+  cursor: pointer;
+}
+.title{
+  text-align: center;
+}
+#rolodex{
+  display: none;
+}
+.tabselect{
+  padding: 8px;
+  background-image: linear-gradient(135deg, #00146b 46.88%, #6675e0 46.88%, #6675e0 50%, #00146b 50%, #00146b 96.88%, #6675e0 96.88%, #6675e0 100%);
+  background-size: 22.63px 22.63px;
+}
+#rolodexUL {
+  /* Remove default list styling */
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+#rolodexUL li a {
+  border: 1px solid #ddd; /* Add a border to all links */
+  margin-top: -1px; /* Prevent double borders */
+  background-color: #f6f6f6; /* Grey background color */
+  padding: 7px; /* Add some padding */
+  text-decoration: none; /* Remove default text underline */
+  font-size: 15px; /* Increase the font-size */
+  color: black; /* Add a black text color */
+  display: block; /* Make it into a block element to fill the whole list */
+}
+
+#rolodexUL li a:hover:not(.header) {
+  background-color: #eee; /* Add a hover effect to all links, except for headers */
+}
+
+
+#myInput {
+  width: 100%; /* Full-width */
+  font-size: 16px; /* Increase font-size */
+  padding: 12px 20px 12px 20px; /* Add some padding */
+  border: 1px solid #ddd; /* Add a grey border */
+  margin-bottom: 8px; /* Add some space below the input */
+}
+
+#myUL {
+  /* Remove default list styling */
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+#myUL li a {
+  border: 1px solid #ddd; /* Add a border to all links */
+  margin-top: -1px; /* Prevent double borders */
+  background-color: #f6f6f6; /* Grey background color */
+  padding: 7px; /* Add some padding */
+  text-decoration: none; /* Remove default text underline */
+  font-size: 15px; /* Increase the font-size */
+  color: black; /* Add a black text color */
+  display: block; /* Make it into a block element to fill the whole list */
+}
+
+#myUL li a:hover:not(.header) {
+  background-color: #eee; /* Add a hover effect to all links, except for headers */
+}
+
+.scroller {
+  color: #ffffff;
+  background-color: rgb(0, 117, 252);
+  padding: 7px;
+  font-weight: 350;
+  font-family: sans-serif;
+  text-align: center;
+  float: center;
+  border-radius: 4px;
+  margin-bottom: 4px;
+  margin-left: 4px;
+  margin-right: 4px;
+}
+
+.scroller:hover {
+background-color: #555;
+}
